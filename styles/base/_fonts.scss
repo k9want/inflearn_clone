@@ -24,7 +24,10 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.ic-pause:before {
+  content: '\e907';
+  color: #fff;
+}
 .ic-bookmark:before {
   content: '\e900';
 }
@@ -46,6 +49,21 @@ i {
 .ic-tree:before {
   content: '\e905';
 }
+.ic-down:before {
+  content: '\e90b';
+}
+.ic-up:before {
+  content: '\e90a';
+}
+.ic-previous:before {
+  content: '\e908';
+}
+.ic-next:before {
+  content: '\e909';
+}
 .ic-search:before {
   content: '\e906';
+}
+.ic-play:before {
+  content: '\ea1c';
 }

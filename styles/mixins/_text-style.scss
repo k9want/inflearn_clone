@@ -13,6 +13,11 @@
   line-height: $line-height-13;
 }
 
+@mixin text-style-14() {
+  font-size: $font-size-14;
+  line-height: $line-height-14;
+}
+
 @mixin text-style-15() {
   font-size: $font-size-15;
   line-height: $line-height-15;

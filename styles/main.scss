@@ -15,12 +15,14 @@
 @import './mixins/responsive';
 
 // modules
+@import './modules/nav-btns';
+@import './modules/swiper-pagination-btns';
 
 // components
-@import './components/buttons';
 
 // layouts
 @import './layouts/grids';
 @import './layouts/header';
 @import './layouts/navigation';
 @import './layouts/swiper-img';
+@import './layouts/swiper-pagination';
