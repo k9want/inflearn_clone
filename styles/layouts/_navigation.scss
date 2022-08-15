@@ -1,0 +1,66 @@
+.navbar {
+  &-wrapper {
+    @include text-style(16, #4a4a4a);
+    @include flexbox(between);
+    padding: 9px (32px-$md-margin);
+    height: 64px;
+  }
+
+  // left part
+  &-left {
+    @include flexbox();
+    height: 64px;
+    line-height: 24px;
+    text-align: start;
+
+    .ic-brand {
+      font-size: 90px;
+      color: #1dc078;
+      margin-right: 10px;
+    }
+  }
+
+  &-list {
+    @include flexbox();
+
+    li {
+      padding: 8px 16px;
+    }
+    :hover {
+      color: #1dc078;
+    }
+  }
+
+  // right part
+  &-right {
+    @include flexbox(end);
+  }
+
+  &-input-group {
+    position: relative;
+    width: 148px;
+    height: 36px;
+    margin-right: 18px;
+    background-color: #f6f6f6;
+    border-radius: 1px solid transparent;
+
+    ::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .navbar-input {
+      padding: 5px 9px;
+    }
+
+    .ic-search {
+      @include pos-center-y;
+      right: 12px;
+
+      :hover {
+        color: #1dc078;
+      }
+    }
+  }
+}
