@@ -3,6 +3,7 @@
 @import './constants/breakpoints';
 
 // base
+@import './base/fonts';
 @import './base/normalize';
 @import './base/reset';
 @import './base/globals';
@@ -19,3 +20,4 @@
 
 // layouts
 @import './layouts/grids';
+@import './layouts/header';

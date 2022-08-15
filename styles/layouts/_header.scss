@@ -1,0 +1,49 @@
+.banner {
+  border-bottom: 1px solid #f1f3f5;
+
+  &-wrapper {
+    @include flexbox(between);
+    padding: 7px (32px-$md-margin) 9px;
+  }
+
+  font-size: 14px;
+  line-height: 20.02px;
+  letter-spacing: -0.3px;
+  color: #858a8d;
+
+  &-left ul {
+    @include flexbox();
+    text-align: left;
+    font-weight: 500;
+
+    li,
+    a {
+      @include flexbox();
+      i {
+        font-size: 20px;
+        margin-right: 4px;
+      }
+    }
+
+    li:first-child {
+      font-weight: 700;
+      color: #000a12;
+    }
+
+    li:first-child::after {
+      content: '|';
+      position: relative;
+      top: -3px;
+      color: #d5dbe2;
+      font-weight: 100;
+      width: 1px;
+      height: 12px;
+      padding: 0 8px;
+    }
+  }
+
+  &-right {
+    color: #000a12;
+    font-weight: 500;
+  }
+}
