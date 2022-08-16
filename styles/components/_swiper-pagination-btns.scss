@@ -23,6 +23,11 @@
   font-weight: 700;
   box-shadow: inset 0 0 0 1px #ced4da;
   color: #495057;
+
+  // js 구현시 수정할 부분
+  &:focus {
+    box-shadow: inset 0 0 0 1px #ced4da;
+  }
 }
 
 .swiper-pagination-dropdown {

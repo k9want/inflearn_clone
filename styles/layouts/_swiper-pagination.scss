@@ -21,7 +21,7 @@
     li {
       margin-left: 8px;
 
-      :focus {
+      .is-focus {
         color: #00c471;
         box-shadow: inset 0 0 0 2px #00c471;
         transition: all 200ms ease-in-out;
