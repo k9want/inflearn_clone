@@ -1,0 +1,50 @@
+.search-bar {
+  position: relative;
+  width: 580px;
+  height: 54px;
+
+  input {
+    @include inline-flexbox();
+    @include text-style(16);
+    width: 580px;
+    height: 54px;
+    padding: 14px 20px;
+    color: #5f5f5f;
+    background-color: rgba(29, 192, 120, 0.12);
+    border: 1px solid rgba(29, 192, 120, 0.24);
+    border-radius: 28px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+    transition: all 200ms ease;
+    &:focus {
+      outline: unset;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border: 1px solid #dedede;
+      background-color: #fff;
+
+      &::placeholder {
+        color: rgba($color: #5f5f5f, $alpha: 0.5);
+      }
+    }
+
+    &::placeholder {
+      color: rgba(14, 148, 88, 0.36);
+    }
+  }
+
+  button {
+    @include inline-flexbox;
+    @include pos-center-y;
+    right: 18px;
+    padding: 5px 12px;
+
+    &:active {
+      border: 2px solid rgba(29, 192, 120, 0.24);
+      border-radius: 8px;
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
+}
