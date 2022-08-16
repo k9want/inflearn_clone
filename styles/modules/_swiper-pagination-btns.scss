@@ -25,12 +25,22 @@
   color: #495057;
 }
 
-.swiper-dropdown {
+.swiper-pagination-dropdown {
   @include inline-flexbox;
   width: 36px;
   height: 36px;
   padding: 1px 6px;
   margin-left: 16px;
-  border: 1px solid #ced4da;
-  border-radius: 50%;
+
+  i {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 50%;
+  }
+
+  .is-active {
+    border: 1px solid #00c471;
+    color: #00c471;
+    rotate: 180deg;
+  }
 }
