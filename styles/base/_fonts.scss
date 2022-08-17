@@ -64,6 +64,14 @@ i {
 .ic-search:before {
   content: '\e906';
 }
+.ic-star-o:before {
+  content: '\e90c';
+  color: #fdcc11;
+}
+.ic-star-filled:before {
+  content: '\e90d';
+  color: #fdcc11;
+}
 .ic-play:before {
   content: '\ea1c';
 }
