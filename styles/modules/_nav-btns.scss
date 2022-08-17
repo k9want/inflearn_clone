@@ -17,4 +17,8 @@
   @extend %btn-nav-base;
   background-color: #ff7867;
   color: #fff;
+
+  &:hover {
+    background-color: #ff6d5a;
+  }
 }
