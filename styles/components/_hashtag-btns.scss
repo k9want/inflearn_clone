@@ -1,0 +1,17 @@
+.hashtag-btn {
+  @include text-style(12);
+  @include inline-flexbox();
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  color: #3e4042;
+  height: 28px;
+  padding: 0 12px;
+  margin: 4px;
+  border-radius: 20px;
+  background-color: #f1f3f5;
+
+  &:hover {
+    background-color: #e9ebee;
+    transition: color 200ms ease-in-out;
+  }
+}

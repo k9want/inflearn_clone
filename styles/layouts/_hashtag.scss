@@ -1,0 +1,13 @@
+.hashtag {
+  &-wrapper {
+    width: 580px;
+    height: 96px;
+    padding-bottom: 24px;
+    margin: 0 auto;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
