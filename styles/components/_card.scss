@@ -63,10 +63,21 @@
       }
     }
     .price {
-      height: 24px;
-      line-height: 18.4px;
-      font-weight: 700;
-      color: #175cbe;
+      @include flexbox(start, center);
+      .del {
+        text-decoration: line-through;
+        font-weight: 500;
+        color: #7d7d7d;
+        font-size: 0.9rem;
+        margin-right: 4px;
+      }
+
+      span {
+        height: 24px;
+        line-height: 18.4px;
+        font-weight: 700;
+        color: #175cbe;
+      }
     }
 
     .tags {
