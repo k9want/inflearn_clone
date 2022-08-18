@@ -1,0 +1,124 @@
+.card {
+  position: relative;
+  width: 231.18px;
+  margin-right: 6px;
+}
+
+.card-front {
+  &:hover + .card-back {
+    display: block;
+  }
+
+  .card-img {
+    width: 231.19px;
+    height: 150.5px;
+    margin-right: 6px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .card-content {
+    .lecture-title {
+      flex: 1 1 auto;
+      font-weight: 700;
+      margin-bottom: 0;
+      line-height: 1.5em;
+      height: 3rem;
+      color: #454545;
+      font-size: 1rem;
+    }
+
+    .instructor {
+      color: #7d7d7d;
+      font-size: 0.9rem;
+      line-height: 1.5em;
+    }
+
+    .review {
+      height: 24px;
+
+      @include inline-flexbox(start);
+      &-avg {
+        @include inline-flexbox();
+        font-size: 14.3px;
+      }
+
+      &-cnt {
+        font-size: 10px;
+        line-height: 15px;
+        color: #4a4a4a;
+      }
+    }
+    .price {
+      height: 24px;
+      line-height: 18.4px;
+      font-weight: 700;
+      color: #175cbe;
+    }
+
+    .tags {
+      padding-top: 8px;
+    }
+  }
+}
+
+.card-back {
+  display: none;
+
+  &:hover {
+    display: block;
+  }
+
+  a {
+    position: absolute;
+    padding: 12px;
+    width: 231.19px;
+    height: 316px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .lecture-title {
+    @include text-style(15_2);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 19.2px;
+  }
+
+  .lecture-metas {
+    @include text-style(13);
+    @include column-flexbox(center, start);
+    color: #c5ebf8;
+  }
+
+  .lecture-active {
+    @include column-flexbox();
+    position: absolute;
+    bottom: 4px;
+    right: 2.4px;
+    color: #fff;
+
+    .ic-heart {
+      font-size: 17px;
+      padding: 2.4px;
+
+      &:hover {
+        color: #e94e58;
+        cursor: grab;
+      }
+    }
+
+    .ic-plus {
+      font-size: 18px;
+      padding: 2.4px;
+
+      &:hover {
+        cursor: grab;
+      }
+    }
+  }
+}
