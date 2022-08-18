@@ -1,3 +1,7 @@
+section[class$='-course'] {
+  padding: 24px 0;
+}
+
 .course {
   &-header {
     margin-bottom: 16px;
@@ -6,6 +10,10 @@
   &-title {
     @include text-style(24);
     color: #1e1e1e;
+
+    i {
+      font-size: 20px;
+    }
   }
 
   &-text {
