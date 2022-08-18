@@ -15,14 +15,17 @@
 @import './mixins/responsive';
 
 // modules
+@import './modules/nav-btns';
+@import './modules/swiper-pagination-btns';
+@import './modules/search-input';
+@import './modules/hashtag-btns';
+@import './modules/card-content-tags';
 
 // components
-@import './components/nav-btns';
-@import './components/swiper-pagination-btns';
-@import './components/search-input';
-@import './components/hashtag-btns';
+@import './components/card';
 
 // layouts
+
 @import './layouts/grids';
 @import './layouts/header';
 @import './layouts/navigation';
@@ -30,3 +33,4 @@
 @import './layouts/swiper-pagination';
 @import './layouts/search';
 @import './layouts/hashtag';
+@import './layouts/course';

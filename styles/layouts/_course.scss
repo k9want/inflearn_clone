@@ -1,0 +1,23 @@
+.course {
+  &-header {
+    margin-bottom: 16px;
+  }
+
+  &-title {
+    @include text-style(24);
+    color: #1e1e1e;
+  }
+
+  &-text {
+    @include text-style(15);
+    color: #757575;
+  }
+}
+
+.card-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 6px 0;
+}
