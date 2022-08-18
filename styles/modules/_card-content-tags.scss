@@ -1,0 +1,25 @@
+%card-content-tag-base {
+  @include text-style(12);
+  @include inline-flexbox;
+  color: #454545;
+  height: 24px;
+  padding: 0px 9px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.tag-students {
+  @extend %card-content-tag-base;
+  background-color: hsl(321, 63%, 90%);
+}
+
+.tag-new {
+  @extend %card-content-tag-base;
+  background-color: hsl(182, 75%, 94%);
+}
+
+.tag-discount {
+  @extend %card-content-tag-base;
+  background-color: hsl(1, 100%, 89%);
+}
