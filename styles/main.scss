@@ -25,6 +25,7 @@
 @import './components/card';
 @import './components/roadmap-card';
 @import './components/curation-card';
+@import './components/recent-card';
 
 // layouts
 @import './layouts/grids';
@@ -35,4 +36,4 @@
 @import './layouts/search';
 @import './layouts/hashtag';
 @import './layouts/course-base'; // free, newbie, roadmap
-@import './layouts/curation-course';
+@import './layouts/curation-course'; //curation(읽어보기)
