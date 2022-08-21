@@ -1,0 +1,71 @@
+.review {
+  padding: 24px 0;
+
+  &-wrapper {
+    @include flexbox(between);
+
+    .review-left {
+      h1 {
+        font-size: 2.25rem;
+        line-height: 1.5em;
+        color: #242424;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        span {
+          color: #47c880;
+        }
+      }
+
+      p {
+        color: #757575;
+        margin-bottom: 36px;
+      }
+
+      .buttons {
+        @include flexbox(start, center);
+        a {
+          padding: 10px 16px;
+          font-size: 16px;
+          color: #333;
+          border-radius: 3px;
+          border: 1px solid #1dc078;
+          background-color: #fff;
+          margin-bottom: 8px;
+          margin-right: 8px;
+
+          &:hover {
+            background-color: #1dc0781f;
+          }
+        }
+      }
+    }
+
+    .review-right {
+      position: relative;
+      overflow: hidden;
+      max-width: 590px;
+      height: 480px;
+      width: 100%;
+
+      &:hover {
+        cursor: grab;
+      }
+
+      .review-blur {
+        width: 100%;
+        height: 48px;
+        background: linear-gradient(
+          180deg,
+          hsla(0, 0%, 100%, 0),
+          hsla(0, 0%, 100%, 0.72)
+        );
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+//
