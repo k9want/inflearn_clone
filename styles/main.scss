@@ -24,6 +24,7 @@
 // components
 @import './components/card';
 @import './components/roadmap-card';
+@import './components/curation-card';
 
 // layouts
 @import './layouts/grids';
@@ -33,4 +34,5 @@
 @import './layouts/swiper-pagination';
 @import './layouts/search';
 @import './layouts/hashtag';
-@import './layouts/course-base';
+@import './layouts/course-base'; // free, newbie, roadmap
+@import './layouts/curation-course';
