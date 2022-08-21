@@ -24,6 +24,10 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.ic-badge-discount:before {
+  content: '\e910';
+}
 .ic-pause:before {
   content: '\e907';
   color: #fff;
