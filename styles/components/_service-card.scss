@@ -1,0 +1,42 @@
+.service-card {
+  @include column-flexbox(between, start);
+  width: 380px;
+  height: 330px;
+  padding: 48px;
+  margin: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &-header {
+    h3 {
+      font-size: 1.125rem;
+      line-height: 1.125;
+      font-weight: 700;
+      color: #363636;
+      margin: 0 0 8px;
+    }
+
+    p {
+      width: 100%;
+      color: #757575;
+      font-size: 1rem;
+    }
+  }
+
+  &-content {
+    a {
+      @include inline-flexbox();
+      padding: 12px 16px;
+      color: #fff;
+      background-color: #1dc078;
+      font-weight: 700;
+      line-height: 1;
+      border-radius: 290463px;
+
+      i {
+        margin-left: 4px;
+      }
+    }
+  }
+}
