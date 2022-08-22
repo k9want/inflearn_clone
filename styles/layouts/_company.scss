@@ -1,0 +1,29 @@
+.company {
+  @include column-flexbox();
+  padding: 64px 0 44px;
+  color: #000a12;
+
+  h3 {
+    line-height: 1.4;
+    letter-spacing: -0.3px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &-wrapper {
+    @include flexbox();
+
+    div {
+      margin: 0 15px 20px;
+      height: 28px;
+      color: #000a12;
+    }
+    img {
+      display: block;
+      height: 100%;
+      filter: grayscale(1);
+    }
+  }
+}
