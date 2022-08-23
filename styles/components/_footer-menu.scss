@@ -1,0 +1,31 @@
+.menu {
+  margin-right: 20px;
+
+  strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #eee;
+    padding: 16px 0 14px;
+    line-height: 1.43;
+  }
+
+  ul:last-child {
+    margin-bottom: 17px;
+  }
+
+  li {
+    margin-bottom: 3px;
+  }
+
+  a {
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.43;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
