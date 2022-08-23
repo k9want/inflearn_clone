@@ -1,0 +1,20 @@
+.info-right {
+  @include flexbox(between);
+  width: 260px;
+  margin-left: 20px;
+
+  a {
+    @include inline-flexbox();
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background: #bdbdbd;
+    text-align: center;
+
+    span {
+      font-size: 22px;
+      font-weight: 700;
+      color: #333;
+    }
+  }
+}

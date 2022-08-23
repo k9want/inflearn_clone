@@ -1,0 +1,32 @@
+.info-left {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #bdbdbd;
+
+  .info-top {
+    margin-bottom: 8px;
+
+    a {
+      font-weight: 700;
+
+      .brand_logo {
+        fill: #1dc078;
+      }
+
+      span::before {
+        display: inline-block;
+        content: '|';
+        margin: 0 8px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .info-bottom {
+    max-height: 54px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    word-break: keep-all;
+  }
+}
