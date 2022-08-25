@@ -1,0 +1,22 @@
+.roadmap-nav {
+  @include flexbox(end);
+  margin-bottom: 12px;
+  padding: 0 12px;
+
+  &-group {
+    button:last-child {
+      margin-left: 12px;
+    }
+
+    button.is-active {
+      i {
+        color: #595959;
+      }
+    }
+
+    i {
+      color: #929292;
+      font-size: 24px;
+    }
+  }
+}
