@@ -20,6 +20,8 @@
 @import './modules/search-input';
 @import './modules/hashtag-btns';
 @import './modules/card-content-tags';
+/* roadmap */
+@import './modules/roadmap-select';
 
 // components
 @import './components/card';
@@ -33,17 +35,21 @@
 @import './components/footer-info-right';
 
 // layouts
-@import './layouts/grids';
-@import './layouts/header';
-@import './layouts/navigation';
-@import './layouts/swiper-img';
-@import './layouts/swiper-pagination';
-@import './layouts/search';
-@import './layouts/hashtag';
-@import './layouts/course-base'; // free, newbie, roadmap
-@import './layouts/curation-course'; //curation(읽어보기)
-@import './layouts/review';
-@import './layouts/banner2';
-@import './layouts/company';
-@import './layouts/service';
-@import './layouts/footer';
+/* index */
+@import './layouts/index/grids';
+@import './layouts/index/header';
+@import './layouts/index/navigation';
+@import './layouts/index/swiper-img';
+@import './layouts/index/swiper-pagination';
+@import './layouts/index/search';
+@import './layouts/index/hashtag';
+@import './layouts/index/course-base'; // free, newbie, roadmap
+@import './layouts/index/curation-course'; //curation(읽어보기)
+@import './layouts/index/review';
+@import './layouts/index/banner2';
+@import './layouts/index/company';
+@import './layouts/index/service';
+@import './layouts/index/footer';
+
+/* roadamp */
+@import './layouts/roadmap/roadmap-list';
