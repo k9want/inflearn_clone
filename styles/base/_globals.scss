@@ -48,3 +48,10 @@
     display: none !important;
   }
 }
+
+// Roadmap Page 전용
+.sm-rm-hidden {
+  @media screen and (max-width: $roadmap-md-breakpoint) {
+    display: none !important;
+  }
+}

@@ -75,4 +75,27 @@ $lg-max-container: 1200px;
       }
     }
   }
+
+  /*RoadMap Page*/
+  //TABLET
+  @include responsive(RoadT) {
+    padding: 0;
+
+    @for $i from 1 through $md-columns {
+      .roadmap-md-#{$i} {
+        width: percentage($i / $md-columns);
+      }
+    }
+  }
+
+  //DESKTOP
+  @include responsive(RoadD) {
+    max-width: $lg-max-container;
+
+    @for $i from 1 through $lg-columns {
+      .roadmap-lg-#{$i} {
+        width: percentage($i / $lg-columns);
+      }
+    }
+  }
 }

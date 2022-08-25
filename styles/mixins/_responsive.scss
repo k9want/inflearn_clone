@@ -10,4 +10,16 @@
       @content;
     }
   }
+
+  @if ($screen == 'RoadT') {
+    @media screen and (min-width: $roadmap-md-breakpoint) {
+      @content;
+    }
+  }
+
+  @if ($screen == 'RoadD') {
+    @media screen and (min-width: $roadmap-lg-breakpoint) {
+      @content;
+    }
+  }
 }
