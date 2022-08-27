@@ -1,0 +1,95 @@
+.roadmap-search {
+  &-section {
+    @include column-flexbox();
+    padding: 48px 0;
+    background-color: #fcfff8;
+    background-image: url('../../../assets/images/roadmap/roadmap-header-img.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 14px;
+      color: #595959;
+    }
+
+    .roadmap-search-bar-wrapper {
+      padding-right: 35px;
+
+      .roadmap-search-bar {
+        @include flexbox();
+        position: relative;
+        width: 285px;
+        height: 48px;
+        margin-top: 1rem;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        background-color: #fff;
+
+        input {
+          background: transparent;
+          border: 0;
+          height: 100%;
+          font-size: 1rem;
+          color: #333;
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 100%;
+          margin-right: 35px;
+
+          &::placeholder {
+            font-size: 0.875rem;
+            color: #929292;
+          }
+        }
+
+        button {
+          @include inline-flexbox();
+          position: absolute;
+          right: -35px;
+          top: 0;
+          bottom: 0;
+          font-size: 16px;
+          font-weight: 800;
+          line-height: 1;
+          color: #fff;
+          width: 70px;
+          height: 100%;
+          padding: 1px 6px;
+          background-color: #1dc078;
+          border: 1px solid #1dc078;
+          border-radius: 35.5px;
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    &-section {
+      h1 {
+        font-size: 2rem;
+        line-height: 1;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.44;
+      }
+
+      .roadmap-search-bar-wrapper {
+        padding-right: 0px;
+
+        .roadmap-search-bar {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
