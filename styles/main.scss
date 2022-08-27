@@ -21,7 +21,8 @@
 @import './modules/hashtag-btns';
 @import './modules/card-content-tags';
 /* roadmap */
-@import './modules/roadmap-select';
+@import './modules/roadmaps-select';
+@import './modules/roadmaps-card-content-tags';
 
 // components
 @import './components/card';
@@ -33,6 +34,8 @@
 @import './components/footer-menu';
 @import './components/footer-info-left';
 @import './components/footer-info-right';
+/* roadmap */
+@import './components/roadmaps-page-card';
 
 // layouts
 /* index */
@@ -52,6 +55,6 @@
 @import './layouts/index/footer';
 
 /* roadamp */
-@import './layouts/roadmap/roadmap-list';
-@import './layouts/roadmap/roadmap-main';
-@import './layouts/roadmap/roadmap-nav';
+@import './layouts/roadmap/roadmaps-search';
+@import './layouts/roadmap/roadmaps-main';
+@import './layouts/roadmap/roadmaps-nav';

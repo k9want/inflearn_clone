@@ -1,5 +1,4 @@
 %select-wrapper-base {
-  margin-left: 20px;
   font-weight: 400;
 
   select {
@@ -22,6 +21,7 @@
 
 .select-search {
   @extend %select-wrapper-base;
+  margin-left: 20px;
   height: 2.25em;
 
   select:focus {

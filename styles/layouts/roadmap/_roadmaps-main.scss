@@ -1,0 +1,45 @@
+#roadmap-main {
+  margin: auto;
+  padding: 16px 6px;
+
+  .container {
+    padding: 0;
+    max-width: none;
+
+    .panel {
+      @include flexbox();
+
+      .roadmap-card-list {
+        @include flexbox(start);
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        padding: 0;
+      }
+    }
+  }
+
+  @include responsive('RoadT') {
+    padding: 24px 1rem;
+
+    .panel {
+      &-left {
+        width: 216px;
+      }
+
+      &-right {
+        padding-left: 24px;
+      }
+    }
+
+    .roadmap-card-list {
+      margin-bottom: 32px;
+    }
+  }
+
+  @include responsive('RoadD') {
+    max-width: 1440px;
+    .panel-right {
+      width: 1200px;
+    }
+  }
+}
