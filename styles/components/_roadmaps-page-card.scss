@@ -1,0 +1,107 @@
+.roadmap-page-card {
+  @include column-flexbox(start);
+  padding: 0 6px;
+  margin-bottom: 28px;
+  border-radius: 4px;
+
+  .card-img {
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  .card-content {
+    width: 100%;
+    padding-top: 12px;
+    color: #454545;
+    background-color: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    &-tags {
+      @include flexbox(start, start);
+      flex-wrap: wrap;
+      overflow: hidden;
+      height: 20px;
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      display: -webkit-box;
+      font-size: 0.875rem;
+      line-height: 1.5em;
+      height: 60px;
+      margin: 0 0 8px;
+      color: #1b1c1d;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      word-break: break-all;
+    }
+
+    &-metas {
+      @include column-flexbox(start, start);
+      font-size: 12px;
+      color: #858a8d;
+      margin: 0;
+      font-weight: 500;
+
+      &-top,
+      &-bottom {
+        @include flexbox(start);
+
+        svg {
+          margin-right: 4px;
+        }
+      }
+
+      .gap {
+        display: inline-block;
+        width: 2px;
+        height: 2px;
+        margin: 3px 6px;
+        border-radius: 1px;
+        background-color: #868e96;
+      }
+    }
+  }
+
+  @include responsive(T) {
+    padding: 0 12px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: unset;
+    filter: drop-shadow(0 4px 10px rgba(26, 28, 29, 0.06));
+
+    .card-img {
+      img {
+        border-radius: 12px 12px 0 0;
+      }
+    }
+
+    .card-content {
+      padding: 24px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+
+      &-tags {
+        margin-bottom: 16px;
+        height: 30px;
+      }
+      h3 {
+        height: 52px;
+        font-size: 1.125rem;
+        -webkit-line-clamp: 2;
+      }
+
+      &-metas {
+        flex-direction: row;
+        font-size: 13px;
+      }
+    }
+  }
+}
