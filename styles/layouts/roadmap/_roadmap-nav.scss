@@ -1,9 +1,16 @@
 .roadmap-nav {
-  @include flexbox(end);
+  @include flexbox(between);
   margin-bottom: 12px;
   padding: 0 12px;
 
-  &-group {
+  &-left {
+    i.ic-slider {
+      color: #929292;
+      font-size: 24px;
+    }
+  }
+
+  &-right {
     button:last-child {
       margin-left: 12px;
     }
