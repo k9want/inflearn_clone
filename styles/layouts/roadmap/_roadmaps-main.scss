@@ -1,4 +1,4 @@
-#roadmap-main {
+#roadmaps-main {
   margin: auto;
   padding: 16px 6px;
 
@@ -9,7 +9,7 @@
     .panel {
       @include flexbox();
 
-      .roadmap-card-list {
+      .roadmaps-card-list {
         @include flexbox(start);
         flex-wrap: wrap;
         margin-bottom: 40px;
