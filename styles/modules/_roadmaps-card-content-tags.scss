@@ -43,7 +43,6 @@
       opacity: 0.5;
       &.lv1 {
         height: 4.5px;
-        opacity: 1;
       }
 
       &.lv2 {
@@ -52,6 +51,9 @@
       }
       &.lv3 {
         height: 10.5px;
+      }
+      &.is-active {
+        opacity: 1;
       }
     }
   }
