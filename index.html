@@ -2324,8 +2324,13 @@
         <div class="menu-list">
           <!-- 인프런 -->
           <div class="menu">
-            <strong>인프런</strong>
-            <ul>
+            <div class="menu-dropbox-remote">
+              <strong>인프런 </strong>
+              <!-- <i class="ic-down sm-only is-active"> -->
+              <i class="ic-down sm-only"> </i>
+            </div>
+            <!-- <ul class="menu-dropbox is-active"> -->
+            <ul class="menu-dropbox">
               <li><a href="">공지사항</a></li>
               <li><a href="">인프런 소개</a></li>
               <li><a href="">인프랩 실Log</a></li>
@@ -2335,8 +2340,11 @@
 
           <!-- 고객센터 -->
           <div class="menu">
-            <strong>고객센터</strong>
-            <ul>
+            <div class="menu-dropbox-remote">
+              <strong>고객센터 </strong>
+              <i class="ic-down sm-only"></i>
+            </div>
+            <ul class="menu-dropbox">
               <li><a href="#">자주묻는 질문</a></li>
               <li><a href="#">수료증 확인</a></li>
               <li><a href="#">이용약관</a></li>
@@ -2347,8 +2355,11 @@
 
           <!-- 신청하기 -->
           <div class="menu">
-            <strong>신청하기 </strong>
-            <ul>
+            <div class="menu-dropbox-remote">
+              <strong>신청하기</strong>
+              <i class="ic-down sm-only"></i>
+            </div>
+            <ul class="menu-dropbox">
               <li><a href="#">지식공유참여</a></li>
               <li><a href="#">멘토링 소개</a></li>
               <li><a href="#">인프런 비즈니스</a></li>
@@ -2358,9 +2369,11 @@
           </div>
 
           <!-- 학습하기 -->
-          <div class="menu">
-            <strong>학습하기</strong>
-            <ul>
+          <div class="menu sm-hidden">
+            <div class="menu-dropbox-remote">
+              <strong>학습하기</strong>
+            </div>
+            <ul class="menu-dropbox">
               <li><a href="#">IT 프로그래밍</a></li>
               <li><a href="#">크리에이티브</a></li>
               <li><a href="#">업무스킬</a></li>
@@ -2370,9 +2383,11 @@
           </div>
 
           <!-- 커뮤니티 -->
-          <div class="menu">
-            <strong>커뮤니티</strong>
-            <ul>
+          <div class="menu sm-hidden">
+            <div class="menu-dropbox-remote">
+              <strong>커뮤니티</strong>
+            </div>
+            <ul class="menu-dropbox">
               <li><a href="#">학습로드맵</a></li>
               <li><a href="#">질문 & 답변</a></li>
               <li><a href="#">수강평 모아보기</a></li>
@@ -2385,7 +2400,7 @@
         <div class="info">
           <div class="info-left">
             <div class="info-top">
-              <a href="#">
+              <a href="#" class="sm-hidden">
                 <svg
                   width="85"
                   id="icon_brand_logo"
@@ -2409,35 +2424,44 @@
                 </svg>
               </a>
               <a href="#">
-                <span>개인정보취급방침</span>
+                <span class="info-privacy">개인정보취급방침</span>
               </a>
               <a href="#"> <span>이용약관</span></a>
             </div>
 
             <div class="info-bottom">
-              <span>(주)인프랩 | </span>
-              <span>대표자: 이형주 | </span>
-              <span>
-                사업자번호: 499-81-00612
-                <a href="#">사업자 정보 확인</a></span
-              >
-              <br />
-              <span>통신판매업: 2018-성남분당B-0062 | </span>
-              <span>개인정보보호책임자: 이동욱 | </span>
-              <span
-                >이메일:
-                <a href="mailto:info@inflearn.com">info@inflearn.com</a></span
-              >
-              <br />
-              <span
-                >주소: 경기도 성남시 분당구 대왕판교로 660 유스페이스 1A동
-                405호</span
-              >
+              <div class="sm-only mobile-footer-info">
+                (주)인프랩 사업자 정보
+                <button type="button" class="open-button is-active">
+                  <i class="ic-down"></i>
+                </button>
+              </div>
+              <div class="footer-dropbox">
+                <span class="sm-hidden">(주)인프랩 | </span>
+
+                <span>대표자: 이형주 | </span>
+                <span>
+                  사업자번호: 499-81-00612
+                  <a href="#">사업자 정보 확인</a></span
+                >
+                <br />
+                <span>통신판매업: 2018-성남분당B-0062 | </span>
+                <span>개인정보보호책임자: 이동욱 | </span>
+                <span
+                  >이메일:
+                  <a href="mailto:info@inflearn.com">info@inflearn.com</a></span
+                >
+                <br />
+                <span
+                  >주소: 경기도 성남시 분당구 대왕판교로 660 유스페이스 1A동
+                  405호</span
+                >
+              </div>
             </div>
             <div>©INFLAB. ALL RIGHTS RESERVED</div>
           </div>
 
-          <div class="info-right">
+          <div class="info-right sm-hidden">
             <a href="https://post.naver.com/inflearn" target="_blank">
               <span>N</span>
             </a>

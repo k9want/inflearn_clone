@@ -1,21 +1,50 @@
 .menu {
+  width: 100%;
   margin-right: 20px;
+  border-bottom: 1px solid #434a54;
 
-  strong {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    color: #eee;
-    padding: 16px 0 14px;
-    line-height: 1.43;
+  &-dropbox-remote {
+    @include flexbox(between, center);
+    cursor: pointer;
+
+    strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: #eee;
+      padding: 16px 0 14px;
+      line-height: 1.43;
+    }
+
+    .ic-down {
+      font-size: 12px;
+      font-weight: 700;
+      color: #eee;
+
+      &.is-active {
+        transform: rotate(180deg);
+      }
+    }
   }
 
-  ul:last-child {
+  &-dropbox {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  li:last-child {
     margin-bottom: 17px;
   }
 
   li {
-    margin-bottom: 3px;
+    margin-bottom: 7px;
+
+    a {
+      display: block;
+    }
   }
 
   a {
@@ -26,6 +55,23 @@
     &:hover {
       text-decoration: underline;
       cursor: pointer;
+    }
+  }
+
+  @include responsive(T) {
+    width: auto;
+    border: 0;
+
+    li {
+      margin-bottom: 3px;
+
+      a {
+        display: inline;
+      }
+    }
+
+    &-dropbox {
+      display: block;
     }
   }
 }
