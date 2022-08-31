@@ -7,7 +7,7 @@
     max-width: none;
 
     .panel {
-      @include flexbox();
+      @include flexbox(center, start);
 
       .roadmaps-card-list {
         @include flexbox(start);
@@ -33,6 +33,10 @@
 
     .roadmap-card-list {
       margin-bottom: 32px;
+    }
+
+    .roadmaps-pagination {
+      @include flexbox();
     }
   }
 
