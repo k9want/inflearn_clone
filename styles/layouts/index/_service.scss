@@ -2,6 +2,10 @@
   padding: 48px 0;
   background-color: #f9f9f9;
 
+  .container {
+    padding: 0 10px;
+  }
+
   &-header {
     margin-bottom: 20px;
 
@@ -21,6 +25,13 @@
   }
 
   &-wrapper {
-    @include flexbox(between);
+    @include inline-flexbox(between);
+    min-width: 100%;
+    max-width: 1200px;
+    flex-wrap: nowrap;
+
+    .service-card:not(:first-child) {
+      margin-left: 8px;
+    }
   }
 }
