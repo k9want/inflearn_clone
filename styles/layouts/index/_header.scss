@@ -1,9 +1,11 @@
 .banner {
+  @include flexbox();
   border-bottom: 1px solid #f1f3f5;
+  height: 40px;
 
   &-wrapper {
     @include flexbox(between);
-    padding: 7px (32px-$md-margin) 9px;
+    padding: 0 16px;
   }
 
   font-size: 14px;
@@ -40,10 +42,25 @@
       height: 12px;
       padding: 0 8px;
     }
+
+    li:last-child {
+      margin-left: 4px;
+    }
   }
 
   &-right {
     color: #000a12;
     font-weight: 500;
+  }
+  @include responsive(T) {
+    &-wrapper {
+      padding: 0 24px;
+    }
+  }
+
+  @include responsive(D) {
+    &-wrapper {
+      padding: 0 32px;
+    }
   }
 }

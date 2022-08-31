@@ -36,7 +36,7 @@ $lg-max-container: 1200px;
 
 .container {
   width: 100%;
-  padding: $sm-margin;
+  padding: 0;
   margin: 0 auto;
 
   .row {
@@ -56,7 +56,7 @@ $lg-max-container: 1200px;
 
   //TABLET
   @include responsive(T) {
-    padding: 0 $md-margin;
+    padding: 0;
 
     @for $i from 1 through $md-columns {
       .col-md-#{$i} {
