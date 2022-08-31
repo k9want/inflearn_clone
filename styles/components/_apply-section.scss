@@ -1,0 +1,50 @@
+.apply {
+  background: #f3f4f7;
+
+  &-wrapper {
+    @include flexbox(around);
+    padding: 28px 0;
+    max-width: 1152px;
+    margin: 0 auto;
+  }
+
+  &-card {
+    @include column-flexbox();
+  }
+
+  &-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  &-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  &-btn {
+    @include inline-flexbox();
+    height: 45px;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    padding: 8px 16px;
+    color: #fff;
+    background: #1dc078;
+    border-radius: 2px;
+    border: none;
+    white-space: nowrap;
+  }
+
+  @include responsive('T') {
+    &-wrapper {
+      padding: 96px 0;
+    }
+  }
+}
