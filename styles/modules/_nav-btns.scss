@@ -1,16 +1,25 @@
 %btn-nav-base {
-  @include text-style(16);
+  @include text-style(12);
   @include inline-flexbox();
-  height: 34px;
+  height: auto;
   padding: 8px;
+  line-height: 1;
   border-radius: 4px;
+
+  @include responsive(D) {
+    @include text-style(16);
+    height: 34px;
+  }
 }
 
 .btn-nav-login {
   @extend %btn-nav-base;
   background-color: #fff;
   margin-right: 8px;
-  border: 1px solid #dbdbdb;
+
+  @include responsive(D) {
+    border: 1px solid #dbdbdb;
+  }
 }
 
 .btn-nav-signin {
