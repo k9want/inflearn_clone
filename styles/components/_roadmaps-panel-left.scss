@@ -8,6 +8,18 @@
     border: 1px solid #dedede;
     border-radius: 4px;
 
+    .nav-list-wrapper {
+      &.is-active {
+        .nav-toggle::after {
+          transform: rotate(45deg);
+        }
+
+        .nav-list {
+          display: block;
+        }
+      }
+    }
+
     .nav-toggle {
       @include inline-flexbox(start);
       font-weight: 700;
@@ -30,16 +42,11 @@
         transform: rotate(-45deg);
         transition: transform 0.2s;
       }
-
-      &.is-active {
-        &::after {
-          transform: rotate(45deg);
-        }
-      }
     }
 
     .nav-list {
       @include column-flexbox();
+      display: none;
       font-size: 1rem;
       background-color: #fff;
       padding: 18px 24px;
