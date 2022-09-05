@@ -1,0 +1,182 @@
+.modal {
+  @include column-flexbox();
+  position: fixed;
+  background: rgba(11, 19, 30, 0.37);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 80;
+  overflow: hidden;
+
+  &-wrapper {
+    padding: 24px;
+    margin: auto;
+    width: 360px !important;
+    height: 432px;
+    background-color: #fff;
+    border-radius: 6px;
+    z-index: 10;
+  }
+
+  &-close-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
+      margin-left: auto;
+    }
+  }
+
+  &-logo {
+    @include flexbox();
+    margin: 12px 0 24px;
+
+    #ic-brand-logo {
+      width: 135px;
+      height: 24px;
+      fill: #1dc078;
+    }
+  }
+
+  &-form {
+    .modal-login-info {
+      margin-bottom: 12px;
+    }
+
+    &-input {
+      width: 312px !important;
+      margin-top: 0 !important;
+      padding: 13px 12px;
+      line-height: 1.47;
+      font-size: 15px;
+      border: 1px solid #dee2e6;
+      letter-spacing: -0.3px;
+      border-radius: 4px;
+      background-color: #fff;
+
+      &:focus-within {
+        border-color: #00c471;
+      }
+
+      &.input-password {
+        @include flexbox(between);
+
+        .input-password-toggle-button {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-input:first-child {
+      margin-bottom: 12px;
+    }
+  }
+
+  &-button {
+    @include inline-flexbox();
+    width: 312px;
+    height: 48px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.43;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    margin: 12px 0 !important;
+    background-color: #00c471;
+    border-radius: 4px;
+  }
+
+  &-more-action {
+    @include flexbox();
+    margin-bottom: 24px;
+
+    span {
+      font-size: 13px;
+      line-height: 1.38;
+      letter-spacing: -0.3px;
+      font-weight: 400;
+      color: #616568;
+      border-bottom: 1px solid #858a8d;
+      cursor: pointer;
+    }
+
+    span:first-child::after {
+      content: ' ';
+      position: relative;
+      left: 5px;
+      display: inline-block;
+      width: 1px;
+      height: 10px;
+      background-color: #858a8d;
+      pointer-events: none;
+    }
+
+    span:last-child {
+      margin-left: 16px;
+    }
+  }
+}
+
+.social-login {
+  .login-line {
+    @include column-flexbox();
+  }
+  &-line {
+    position: relative;
+    bottom: -8px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    border: none;
+    background-color: #f1f3f5;
+  }
+
+  &-line-text {
+    padding: 0 8px;
+    color: #abb0b5;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    z-index: 11;
+  }
+
+  &-group {
+    @include flexbox();
+    column-gap: 12px;
+
+    .social-button {
+      @include inline-flexbox();
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 4px;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2%);
+      cursor: pointer;
+    }
+  }
+
+  &-kakao {
+    background-color: #fae500;
+  }
+
+  &-google {
+    background-color: #f8f8f8;
+  }
+
+  &-github {
+    background-color: #3c4043;
+  }
+
+  &-facebook {
+    background-color: #325ca6;
+  }
+
+  &-apple {
+    background-color: #fff;
+  }
+}
