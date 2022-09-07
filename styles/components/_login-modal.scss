@@ -56,6 +56,10 @@
       border-radius: 4px;
       background-color: #fff;
 
+      input::placeholder {
+        color: #dee2e6;
+      }
+
       &:focus-within {
         border-color: #00c471;
       }
@@ -64,6 +68,7 @@
         @include flexbox(between);
 
         .input-password-toggle-button {
+          @include inline-flexbox();
           cursor: pointer;
         }
       }

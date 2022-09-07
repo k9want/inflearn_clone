@@ -1,4 +1,7 @@
 .navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 hsla(0deg, 0%, 81%, 0.5);
+
   &-wrapper {
     @include text-style(16, #4a4a4a);
     @include flexbox(between);
