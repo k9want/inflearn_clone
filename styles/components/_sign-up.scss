@@ -83,20 +83,42 @@
       }
     }
 
-    &-error-group {
-      @include column-flexbox(start, start);
+    &-password-wrapper:focus-within {
+      .signup-form-password-error-group {
+        display: flex;
+      }
     }
 
+    &-password-error-group {
+      @include column-flexbox(start, start);
+      display: none;
+    }
+
+    &-password-error {
+      display: block;
+      line-height: 1.5;
+      letter-spacing: -0.3px;
+      font-size: 12px;
+      font-weight: 400;
+      color: #abb0b5;
+
+      &.is-error {
+        color: #e5503c;
+      }
+
+      &.is-success {
+        color: #00c471;
+      }
+    }
+
+    // email, pwConfirm
     &-error {
+      display: block;
       line-height: 1.5;
       letter-spacing: -0.3px;
       font-size: 12px;
       font-weight: 400;
       color: #e5503c;
-
-      &.success {
-        color: #00c471;
-      }
     }
   }
 
