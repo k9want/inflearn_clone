@@ -1,0 +1,62 @@
+.signUp-error {
+  &-modal {
+    @include column-flexbox();
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 80;
+    background-color: rgba(11, 19, 30, 0.37);
+
+    &-wrapper {
+      @include column-flexbox();
+      padding: 38px 64px;
+      width: calc(100% - 40px);
+      max-width: 416px;
+      min-width: 320px;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+
+    &-info {
+      @include column-flexbox();
+      margin-bottom: 28px;
+
+      &-icon {
+        margin-bottom: 20px;
+      }
+
+      &-title {
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 6px;
+        color: #212529;
+        word-break: keep-all;
+        text-align: center;
+      }
+
+      &-description {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #343a40;
+        text-align: center;
+        word-break: break-word;
+      }
+    }
+
+    &-button {
+      @include inline-flexbox();
+      height: 40px;
+      padding: 0 16px;
+      color: #fff;
+      font-size: 15px;
+      line-height: 1.47;
+      font-weight: 500;
+      background-color: #00c471;
+      border-radius: 3px;
+      transition: all 0.15s ease;
+    }
+  }
+}
