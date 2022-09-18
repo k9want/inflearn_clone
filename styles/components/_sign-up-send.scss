@@ -1,0 +1,63 @@
+.signUp-send-modal {
+  height: inherit;
+}
+
+.signUp-send {
+  @include column-flexbox(start);
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5rem 0;
+  margin: auto 0;
+  background-color: #fff;
+  z-index: 84;
+
+  &-info {
+    max-width: 500px;
+
+    &-title {
+      color: #454545;
+      font-size: 1.75rem;
+      line-height: 1.5;
+      font-weight: 400;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    &-description {
+      margin-top: 8px;
+      white-space: pre-line;
+      font-size: 0.875rem;
+      line-height: 30px;
+      color: #595959;
+
+      span {
+        display: inline-block;
+        margin-top: 4px;
+        letter-spacing: -0.6px;
+        font-size: 0.75rem;
+        white-space: pre-line;
+      }
+    }
+  }
+
+  &-button {
+    @include flexbox();
+
+    button {
+      width: 290px;
+      height: 45px;
+      border: none;
+      background: #1dc078;
+      margin-top: 64px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      color: #fff;
+    }
+  }
+}
