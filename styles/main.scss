@@ -41,6 +41,7 @@
 //signUp
 @import './components/sign-up';
 @import './components/sign-up-error-modal';
+@import './components/sign-up-send';
 
 /* common */
 @import './components/pagination-list';
@@ -70,3 +71,7 @@
 @import './layouts/roadmap/roadmaps-search';
 @import './layouts/roadmap/roadmaps-main';
 @import './layouts/roadmap/roadmaps-nav';
+
+/* courses */
+@import './layouts/courses//courses-main';
+@import './layouts/courses//courses-main-card-list';
