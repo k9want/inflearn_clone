@@ -412,3 +412,56 @@
   margin-bottom: 40px;
   padding: 0;
 }
+
+.courses-pagination {
+  &-list {
+    position: relative;
+    @include flexbox();
+    height: 35px;
+  }
+
+  &-list-item {
+    a {
+      @include inline-flexbox();
+      text-decoration: none;
+      color: #363636;
+      font-size: 12px;
+      text-align: center;
+      min-width: 2.25em;
+      margin: 0.25rem;
+      padding: 0.5px;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+    }
+
+    &:hover {
+      a {
+        border-color: #b4b4b4;
+      }
+    }
+
+    &.is-current {
+      a {
+        background-color: #1dc078;
+        border-color: #1dc078;
+        color: #fff;
+      }
+    }
+
+    &.pagination-list-previous,
+    &.pagination-list-next {
+      position: absolute;
+      a {
+        padding: 0.5px 9px;
+      }
+    }
+    &.pagination-list-previous {
+      top: 0;
+      left: 0;
+    }
+    &.pagination-list-next {
+      top: 0;
+      right: 0;
+    }
+  }
+}
